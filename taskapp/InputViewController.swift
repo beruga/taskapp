@@ -83,7 +83,9 @@ class InputViewController: UIViewController {
         // 未通知のローカル通知一覧をログ出力
         center.getPendingNotificationRequests {(requests: [UNNotificationRequest]) in
             for request in requests {
-                print 
+                print("-------------")
+                print(request)
+                print("-------------")
             }
         }
     }
